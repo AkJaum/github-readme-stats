@@ -1,0 +1,13 @@
+{
+  "GREETING": {
+    "pattern": "^(hello|hey|welcome|hola|salute|bonjour|shalom|marhabaan)$",
+    "default": "hello"
+  },
+  "SUBJECT": {
+    "default": "world"
+  },
+  "MESSAGE": {
+    "const": "{{$.configs.GREETING.value}}, {{$.configs.SUBJECT.value}}!",
+    "description": "Generates a full greeting message"
+  }
+}
